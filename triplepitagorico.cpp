@@ -1,28 +1,15 @@
 #include <iostream>
-//ayuda empleada de la página web: https://www.lawebdelprogramador.com/foros/Dev-C/2123962-C-terna-pitagorica.html
-using namespace std;
 #include <cmath>
-int main()
-{
-    int a, b, c;
 
-    a = b = c = 1;
-
-    while (a <= 100)
-    {
-        while (b <= 100)
-        {
-            while (c <= 100)
-            {
-                if (sqrt((a^2)+(b^2)) == c);
-                    cout << "a: " << a << " b: " << b << " c: " << c << endl;
-                c++;
+int main() {
+    for (int a = 1; a <= 100; a++) {
+        for (int b = 1; b <= 100; b++) {
+            for (int c = 1; c <= 100; c++) {
+                if (sqrt(a * a + b * b) == c) {
+                    std::cout << "Triple pitagórico encontrado: a = " << a << ", b = " << b << ", c = " << c << std::endl;
+                }
             }
-            if (c > 100) c = 1;
-            b++;
         }
-        if (b > 100) b = 1;
-        a++;
     }
 
     return 0;
