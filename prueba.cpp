@@ -6,7 +6,7 @@ int main() {
         for (int b = 1; b <= 100; b++) {
             for (int c = 1; c <= 100; c++) {
                 if (std::sqrt(a * a + b * b) == c) {
-                    std::cout << "Triple pitagórico encontrado: a = " << a << ", b = " << b << ", c = " << c << std::endl;
+                    std::cout << "Triple pitagorico encontrado: a = " << a << ", b = " << b << ", c = " << c << std::endl;
                 }
             }
         }
