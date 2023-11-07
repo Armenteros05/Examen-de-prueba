@@ -1,5 +1,5 @@
 #include <iostream>
-//ayuda empleada de la página web: https://www.lawebdelprogramador.com/foros/Dev-C/2123962-C-terna-pitagorica.html
+#include <cmath>
 using namespace std;
 
 int main()
@@ -14,7 +14,7 @@ int main()
         {
             while (c <= 100)
             {
-                if (a * a + b * b == c *c)
+                if ((a^2) + (b^2) == (c^2));
                     cout << "a: " << a << " b: " << b << " c: " << c << endl;
                 c++;
             }
