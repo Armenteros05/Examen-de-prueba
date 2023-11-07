@@ -14,3 +14,8 @@ int main() {
 
     return 0;
 }
+//El código cumple los requisitos para ser un triple pitagórico ya que cumple las siguientes características:
+//La formula empleada es la pedida: sqrt(a^2 + b^2) == c
+//Los valores de a, b y c son enteros postivos
+//Los valores de a, b y c son menores o iguales a 100 y se cumple que la suma de a y b siempre es mayor que c
+//Se utilizan los bucles esperados con el bucle for
