@@ -1,15 +1,28 @@
 #include <iostream>
-#include <cmath>
-//tras realizar el código en pruebas.cpp intento trasladarlo aquí y modificar la fórmula para que de el resultado esperado
-int main() {
-    for (int a = 1; a <= 100; a++) {
-        for (int b = 1; b <= 100; b++) {
-            for (int c = 1; c <= 100; c++) {
-                if (std::sqrt(a^2 + b^2) == c) {
-                    std::cout << "Triple pitagorico encontrado: a = " << a << ", b = " << b << ", c = " << c << std::endl;
-                }
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+
+    a = b = c = 1;
+
+    while (a <= 100)
+    {
+        while (b <= 100)
+        {
+            while (c <= 100)
+            {
+                if (a * a + b * b == c *c)
+                    cout << "a: " << a << " b: " << b << " c: " << c << endl;
+                c++;
             }
+            if (c > 100) c = 1;
+            b++;
         }
+        if (b > 100) b = 1;
+        a++;
     }
 
     return 0;
