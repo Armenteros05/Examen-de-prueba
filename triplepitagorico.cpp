@@ -12,6 +12,6 @@ int main() {
             }
         }
     }
-std::cout << "El programa aplica tambien para todos estos valores con signo negativo,el cuadrado de un numero negativo siempre es +" << std::endl;
+std::cout << "El programa aplica tambien para todos estos valores con signo negativo" << std::endl;
     return 0;
 }
